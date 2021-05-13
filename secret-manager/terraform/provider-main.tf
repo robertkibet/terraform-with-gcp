@@ -55,7 +55,7 @@ resource "google_secret_manager_secret" "password" {
 # Add the secret data for username secret
 resource "google_secret_manager_secret_version" "username" {
   secret = google_secret_manager_secret.username.id
-  secret_data = "test-bob"
+  secret_data = "test-bob-test"
 }
 
 # Add the secret data for password secret
