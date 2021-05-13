@@ -129,6 +129,7 @@ data "google_storage_bucket_object_content" "configs" {
   bucket = data.google_secret_manager_secret_version.dev_configs_bucket.secret_data
 }
 
+## read contents from that bucket file and output
 output "bucket-content" {
   value = data.google_storage_bucket_object_content.configs.content
 }
