@@ -1,0 +1,7 @@
+#we dont want to commit my credentials :P
+/credentials
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform
+*.lock.hcl
